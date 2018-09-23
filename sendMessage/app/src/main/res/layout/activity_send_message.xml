@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/activity_margin"
+    tools:context=".sendMessageActivity">
+
+    <EditText
+        android:id="@+id/to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/to"
+        android:gravity="start"
+        android:inputType="numberPassword"
+         />
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:gravity="top|start"
+        android:layout_height="0dp"
+        android:hint="@string/message"
+        android:layout_weight="1"
+        />
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="@string/send"
+        android:padding="@dimen/send_padding"
+        android:layout_margin="@dimen/send_margin"
+        android:onClick="onClickSend"
+
+        />
+
+</LinearLayout>

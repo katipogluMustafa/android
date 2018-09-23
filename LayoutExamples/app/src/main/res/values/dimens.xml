@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_padding">32dp</dimen>
+    <dimen name="textMarginBottom">20dp</dimen>
+    <dimen name="btnMarginBottom">15dp</dimen>
+    <dimen name="spinnerMarginTop">15dp</dimen>
+    <dimen name="radioGroupMarginTop">15dp</dimen>
+    <dimen name="sendPadding">30dp</dimen>
+    <dimen name="sendMargin">32dp</dimen>
+</resources>

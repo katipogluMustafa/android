@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Cola Adviser</string>
+    <string name="find_cola">Find Cola!</string>
+    <string name="brands">No Cola Selected</string>
+
+    <string-array name="colaBrandNames">
+        <item>Coca Cola</item>
+        <item>Pepsi</item>
+        <item>LeCola</item>
+        <item>Fanta</item>
+        <item>Fruko</item>
+        <item>Uludağ</item>
+        <item>Leporta</item>
+    </string-array>
+
+</resources>

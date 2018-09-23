@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_margin"></dimen>
+    <dimen name="send_padding">16dp</dimen>
+    <dimen name="send_margin">16dp</dimen>
+</resources>

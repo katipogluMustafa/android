@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    android:padding="@dimen/layout_padding"
+    tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="@dimen/textMarginBottom"
+            android:text="@string/textView"/>
+        <ToggleButton
+            android:id="@+id/toggleBtn"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="@dimen/btnMarginBottom"
+            android:layout_height="wrap_content"
+            android:textOn="@string/textOn"
+            android:textOff="@string/textOff"
+            />
+        <CheckBox
+            android:id="@+id/checkBox_milk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkBox_milk" />
+        <CheckBox
+            android:id="@+id/checkBox_sugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkBox_sugar"/>
+        <CheckBox
+            android:id="@+id/lemon"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/checkBox_Lemon"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spinnerMarginTop"
+            android:entries="@array/spinnerItems"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/radioGroupMarginTop"
+            >
+            <RadioButton
+                android:id="@+id/subscribe"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/subscribe"/>
+            <RadioButton
+                android:id="@+id/not_subscribe"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/not_subscribe"
+                />
+
+        </RadioGroup>
+        <Button
+            android:id="@+id/send"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/sendMargin"
+            android:padding="@dimen/sendPadding"
+            android:text="@string/send"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:onClick="onClickSend"
+            />
+
+
+</LinearLayout>

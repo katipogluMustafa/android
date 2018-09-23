@@ -1,0 +1,24 @@
+<resources>
+    <!-- Strings -->
+    <string name="app_name">Layout Examples</string>
+    <string name="textView">How do you like your tea served?</string>
+    <string name="textOn">Hot</string>
+    <string name="textOff">Cold</string>
+    <string name="checkBox_milk">Milk</string>
+    <string name="checkBox_sugar">Sugar</string>
+    <string name="checkBox_Lemon">Lemon</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="not_subscribe">Do not Subscribe</string>
+    <string name="send">Send</string>
+    <string name="sucessfulOrder">The Order Successfully send.</string>
+    <string name="goBack">Give Another Order</string>
+    <!-- String Array -->
+    <string-array name="spinnerItems">
+        <item>Turkish Tea</item>
+        <item>Italian Tea</item>
+        <item>American Tea</item>
+        <item>English Tea</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Bits and Pizzas</string>
+    <string name="mainText">App Bar Class</string>
+    <string name="create_order">Create Order</string>
+    <string name="place_holder">Place Holder</string>
+    <string name="share">Share</string>
+    <string name="title_top">Top Fragment</string>
+
+    <string-array name="pizzas">
+        <item>Diavolo</item>
+        <item>Funghi</item>
+    </string-array>
+
+    <string-array name="pasta">
+        <item>Spaghetti Bolognese</item>
+        <item>Lasagna</item>
+    </string-array>
+
+    <string-array name="stores">
+        <item>Cambridge</item>
+        <item>Sebastopol</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

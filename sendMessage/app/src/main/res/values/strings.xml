@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">sendMessage</string>
+    <string name="to">To</string>
+    <string name="message">Message</string>
+    <string name="send">Send</string>
+    <string-array name="spinnervalues">
+        <item></item>
+    </string-array>
+</resources>

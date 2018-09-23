@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ImageText_padding">16dp</dimen>
+    <dimen name="ImageText_size">20sp</dimen>
+    <dimen name="ImageText_def_marginBottom">25dp</dimen>
+</resources>
