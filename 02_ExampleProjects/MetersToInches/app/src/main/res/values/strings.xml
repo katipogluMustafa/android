@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Meters To Inches</string>
+    <string name="convert_btn">Convert</string>
+    <string name="format_error"> Bad Input Format : Can\'t convert </string>
+    <string name="error">Can \'t convert..</string>
+    <string name="emptyInput">Empty Input</string>
+</resources>
