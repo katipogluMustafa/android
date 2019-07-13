@@ -12,3 +12,4 @@
 * ctrl + q --> documentation for the current declaration
 * ctrl + alt + L --> reformat selected code or current line
 * ctrl + alt + shift + L --> reformat dialog for the file
+* ctrl + h --> class hierarch of the item that the cursor on
