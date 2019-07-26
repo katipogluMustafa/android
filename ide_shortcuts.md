@@ -13,3 +13,6 @@
 * ctrl + alt + L --> reformat selected code or current line
 * ctrl + alt + shift + L --> reformat dialog for the file
 * ctrl + h --> class hierarch of the item that the cursor on
+
+* ctr + 0 --> zoom to fit
+* hold space + drag --> move around when you are zoomed in
