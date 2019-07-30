@@ -66,3 +66,51 @@ and end with event actions of type **ACTION_POINTER_DOWN** and
   * In order to identify the index of the
 pointer that triggered the event, the **getActionIndex()** callback method of the
 MotionEvent object must be called. 
+
+## Handling Multiple Touches
+
+Each touch in a multi-touch situation is considered
+by the Android framework to be a pointer . 
+
+* Each pointer, in turn, is referenced
+by an index value and assigned an ID. 
+
+* The current number of pointers can be
+obtained via a call to the **getPointerCount()** method of the current
+MotionEvent object.
+
+* The ID for a pointer at a particular index in the list of
+current pointers may be obtained via a call to the MotionEvent getPointerId()
+method.
+
+* For example, the following code excerpt obtains a count of pointers
+and the ID of the pointer at index 0
+
+````java
+public boolean onTouch(View v, MotionEvent m){
+      int pointerCount = m.getPointerCount();
+      int pointerId = m.getPointerId(0);
+}
+````
+
+> Note that the pointer count will always be greater than or equal to 1 when the
+onTouch listener is triggered (since at least one touch must have occurred for
+the callback to be triggered).
+
+
+A touch on a view, particularly one involving motion across the screen, will
+generate a stream of events before the point of contact with the screen is
+lifted. 
+  * As such, it is likely that an application will need to track individual
+touches over multiple touch events. 
+  * While the ID of a specific touch gesture
+will not change from one event to the next, it is important to keep in mind
+that the index value will change as other touch events come and go. 
+  * When
+working with a touch gesture over multiple events, therefore, it is essential
+that the ID value be used as the touch reference in order to make sure the
+same touch is being tracked. 
+  * When calling methods that require an index
+value, this should be obtained by converting the ID for a touch to the
+corresponding index value via a call to the findPointerIndex() method of the
+MotionEvent object.
