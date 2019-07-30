@@ -42,3 +42,44 @@ a view has focus.
   * Corresponds to the onKey() callback method. Passed
 as arguments are the view that received the event, the KeyCode of the
 physical key that was pressed and a KeyEvent object.
+
+## Implementations
+
+  * onClickListener
+  ````java
+  button.setOnClickListener( new Button.OnClickListener() {
+        public void onClick(View v) {
+           TextView statusText = (TextView)findViewById(R.id.statusText);
+           statusText.setText("Button clicked");
+        }
+  });
+  ````
+  
+  * onLongClickListener
+  ````java
+  button.setOnLongClickListener( new Button.OnLongClickListener() {
+    public boolean onLongClick(View v) {
+       TextView statusText = (TextView)findViewById(R.id.statusText);
+       statusText.setText("Long button click");
+       return true;
+    }
+  });
+  ````
+
+## Consuming Events
+
+Consider the code for the onClick() method.
+* The callback is declared as void and, as such, does not return a value
+to the Android framework after it has finished executing.
+
+The code assigned to the onLongClickListener , on the other hand, is required
+to return a Boolean value to the Android framework. 
+* The purpose of this
+return value is to indicate to the Android runtime whether or not the callback
+has consumed the event. 
+  * If the callback returns a true value, the event is
+discarded by the framework. 
+  * If, on the other hand, the callback returns a false
+value the Android framework will consider the event still to be active and will
+consequently pass it along to the next matching event listener that is
+registered on the same view.
