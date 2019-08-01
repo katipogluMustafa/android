@@ -24,7 +24,7 @@ public class MyRequestQueue {
 
     private MyRequestQueue(Context context){
         ctx = context;
-        setupRequestQueue(context);
+        setupRequestQueue(context.getApplicationContext());
     }
 
     private void setupRequestQueue(Context context){
