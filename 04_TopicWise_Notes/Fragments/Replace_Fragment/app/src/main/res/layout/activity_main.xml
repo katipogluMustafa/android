@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MainActivity_container_main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/MainActivity_btn_addFirstFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add First Fragment"/>
+
+        <Button
+            android:id="@+id/MainActivity_btn_addSecondFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Second Fragment"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/MainActivity_btn_removeFirstFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove First Fragment"/>
+
+        <Button
+            android:id="@+id/MainActivity_btn_removeSecondFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove Second Fragment"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/MainActivity_btn_replaceFirstFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Replace with Second" />
+
+        <Button
+            android:id="@+id/MainActivity_btn_replaceSecondFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Replace With First" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/MainActivity_container_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
